@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Osorio Provisión y Seguridad SAS</title>
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Fuentes y librerías -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f6f8;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    /* Hero con parallax */
+    .hero {
+      background: linear-gradient(rgba(0,65,106,0.75), rgba(0,65,106,0.75)),
+                  url('IMAGENES/banner-servicios.jpg') center/cover no-repeat fixed;
+      color: white;
+      padding: 140px 20px;
+      text-align: center;
+    }
+    .btn-custom {
+      background-color: #00416A;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #006494;
+    }
+    ul.check-list {
+      list-style: none;
+      padding: 0;
+    }
+    ul.check-list li::before {
+      content: "✅";
+      margin-right: 8px;
+    }
+    .service-img {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .service-img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Osorio Seguridad SAS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="nuestrosservicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="quienesosmos.html">Quiénes somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Zona privada</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner estilo Hero -->
+<header class="hero">
+  <div class="container">
+    <h1 data-aos="fade-down">Nuestros Servicios</h1>
+    <p class="lead" data-aos="fade-up">Confianza y profesionalismo en cada proceso</p>
+  </div>
+</header>
+
+<!-- Servicios alternados -->
+<section class="py-5">
+  <div class="container">
+
+    <!-- Servicio 1 -->
+    <div class="row align-items-center mb-5" data-aos="fade-up">
+      <div class="col-md-6">
+        <div class="service-img">
+          <img src="IMAGENES/32487442_l.jpg" alt="Poligrafía" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="fw-bold" style="color:#00416A;">Servicio de Poligrafía</h3>
+        <p>Pruebas pre-empleo, rutinarias y específicas para garantizar la confiabilidad de su personal.</p>
+        <ul class="check-list">
+          <li>Tecnología de última generación</li>
+          <li>Resultados rápidos y precisos</li>
+          <li>Profesionales certificados</li>
+        </ul>
+        <a href="#" class="btn btn-custom mt-3">Solicitar servicio</a>
+      </div>
+    </div>
+
+    <!-- Servicio 2 -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6">
+        <div class="service-img">
+          <img src="IMAGENES/poligrafia.jpg" alt="Estudios de Confiabilidad" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="fw-bold" style="color:#00416A;">Estudios de Confiabilidad</h3>
+        <p>Verificación exhaustiva de antecedentes y validación de información para minimizar riesgos.</p>
+        <ul class="check-list">
+          <li>Antecedentes judiciales y financieros</li>
+          <li>Visitas domiciliarias</li>
+          <li>Evaluación integral</li>
+        </ul>
+        <a href="#" class="btn btn-custom mt-3">Solicitar servicio</a>
+      </div>
+    </div>
+
+    <!-- Servicio 3 -->
+    <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6">
+        <div class="service-img">
+          <img src="IMAGENES/Poligrafia-scaled.jpg.webp" alt="Selección de Personal" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="fw-bold" style="color:#00416A;">Selección de Personal</h3>
+        <p>Reclutamiento, entrevistas por competencias y análisis detallado de cargos.</p>
+        <ul class="check-list">
+          <li>Proceso 100% personalizado</li>
+          <li>Perfiles verificados</li>
+          <li>Evaluación de competencias</li>
+        </ul>
+        <a href="#" class="btn btn-custom mt-3">Solicitar servicio</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Beneficios de elegirnos -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="color:#00416A;" data-aos="fade-up">Beneficios de elegirnos</h2>
+    <div class="row g-4">
+
+      <!-- Beneficio 1 -->
+      <div class="col-md-3 text-center" data-aos="fade-up">
+        <div class="p-4 shadow-sm bg-white rounded h-100">
+          <i class="bi bi-lightning-charge-fill text-primary" style="font-size: 2.5rem;"></i>
+          <h5 class="fw-bold mt-3">Respuesta rápida</h5>
+          <p class="small text-muted">Atendemos solicitudes y entregamos resultados en tiempo récord.</p>
+        </div>
+      </div>
+
+      <!-- Beneficio 2 -->
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-4 shadow-sm bg-white rounded h-100">
+          <i class="bi bi-shield-check text-success" style="font-size: 2.5rem;"></i>
+          <h5 class="fw-bold mt-3">Confiabilidad</h5>
+          <p class="small text-muted">Procesos certificados y confidenciales para su tranquilidad.</p>
+        </div>
+      </div>
+
+      <!-- Beneficio 3 -->
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 shadow-sm bg-white rounded h-100">
+          <i class="bi bi-file-earmark-text text-warning" style="font-size: 2.5rem;"></i>
+          <h5 class="fw-bold mt-3">Informes claros</h5>
+          <p class="small text-muted">Resultados detallados y fáciles de interpretar para tomar decisiones.</p>
+        </div>
+      </div>
+
+      <!-- Beneficio 4 -->
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="p-4 shadow-sm bg-white rounded h-100">
+          <i class="bi bi-briefcase-fill text-danger" style="font-size: 2.5rem;"></i>
+          <h5 class="fw-bold mt-3">Experiencia</h5>
+          <p class="small text-muted">Más de X años trabajando con empresas de diversos sectores.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-final position-relative text-center text-white py-5" style="
+    background: linear-gradient(rgba(0, 65, 106, 0.8), rgba(0, 65, 106, 0.8)),
+                url('IMAGENES/fondo-seguridad.jpg') center/cover fixed;
+">
+  
+  
+  <style>
+    /* Animación de pulso */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    .btn-animado {
+      display: inline-block;
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+      border-radius: 50px;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      animation: pulse 1.8s infinite;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-animado:hover {
+      background-color: #ffcd39;
+    }
+  </style>
+
+
+  <div class="container" data-aos="zoom-in">
+    <h2 class="fw-bold display-5 mb-3">Asegura la confiabilidad de tu personal</h2>
+    <p class="lead mb-4">Expertos en poligrafía y estudios de confiabilidad listos para proteger tu empresa hoy mismo.</p>
+    
+    <a href="https://wa.me/573123868541" target="_blank" class="btn-animado">
+      📞 Quiero proteger mi empresa
+    </a>
+    
+    <p class="mt-3 fst-italic" style="opacity: 0.85;">Más de 200 empresas ya confían en nosotros.</p>
+  </div>
+</section>
+
+<!-- Preguntas Frecuentes -->
+<section class="py-5 bg-light" id="faq">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="color:#00416A;" data-aos="fade-up">Preguntas Frecuentes</h2>
+
+    <div class="accordion accordion-flush shadow-sm" id="faqAccordion">
+
+      <!-- Pregunta 1 -->
+      <div class="accordion-item" data-aos="fade-up">
+        <h2 class="accordion-header" id="faq1-heading">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+            ¿Cuánto tiempo tarda una prueba de poligrafía?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Generalmente entre 2 y 3 horas, incluyendo la entrevista previa y el análisis de resultados.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="accordion-header" id="faq2-heading">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            ¿La información obtenida es confidencial?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Sí, todos nuestros procesos cumplen con estrictos protocolos de confidencialidad y protección de datos.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="accordion-header" id="faq3-heading">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            ¿Puedo contratar sus servicios de manera urgente?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Sí, contamos con servicios prioritarios que pueden programarse en menos de 24 horas según disponibilidad.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="accordion-header" id="faq4-heading">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+            ¿Qué métodos de pago aceptan?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Transferencia bancaria, pagos con tarjeta de crédito y débito, y pagos en efectivo en nuestras oficinas.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Columna 1: Información de la empresa -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Osorio Provisión y Seguridad SAS</h5>
+        <p class="small">
+          NIT: 123456789-0<br>
+          Calle 123 #45-67, Bogotá - Colombia<br>
+          Tel: +57 313 350 7999
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Enlaces</h5>
+        <ul class="list-unstyled small">
+          <li><a href="politica-privacidad.html" class="text-white-50 text-decoration-none">Política de Privacidad</a></li>
+          <li><a href="terminos.html" class="text-white-50 text-decoration-none">Términos y Condiciones</a></li>
+          <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes sociales -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Síguenos</h5>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-facebook" style="font-size: 1.3rem;"></i></a>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-instagram" style="font-size: 1.3rem;"></i></a>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-linkedin" style="font-size: 1.3rem;"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Línea divisoria -->
+    <hr class="border-secondary">
+
+    <!-- Derechos de autor -->
+    <div class="text-center pb-2">
+      <p class="mb-0 small">&copy; 2025 Osorio Provisión y Seguridad SAS - Todos los derechos reservados.</p>
+      <p class="small text-white-50">Desarrollado por [Tu Nombre o Empresa de Diseño]</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón WhatsApp con tooltip al lado izquierdo -->
+<a href="https://wa.me/573123868541" target="_blank" class="whatsapp-button" aria-label="Chat WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="tooltip-text">¡Escríbenos y te ayudamos!</span>
+</a>
+
+<style>
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+    font-size: 30px;
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #1ebe57;
+    transform: scale(1.1);
+  }
+
+  /* Tooltip oculto por defecto */
+  .tooltip-text {
+    position: absolute;
+    bottom: 50%;
+    right: 100%;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, margin-right 0.3s ease;
+  }
+
+  /* Mostrar tooltip al hacer hover */
+  .whatsapp-button:hover .tooltip-text {
+    opacity: 1;
+    pointer-events: auto;
+    margin-right: 25px;
+  }
+</style>
+
+<!-- Font Awesome para el icono -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>

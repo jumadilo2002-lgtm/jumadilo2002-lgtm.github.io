@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Osorio Provisión y Seguridad SAS</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Fuentes y librerías -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f6f8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .navbar-brand {
+      font-weight: 800;
+    }
+    .nav-link.active {
+      color: white !important;
+      font-weight: 700;
+    }
+    .nav-link.active:hover {
+      color: white !important;
+      text-decoration: none;
+    }
+    section.container {
+      background: #e9f0f6;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 65, 106, 0.1);
+      margin-top: 60px;
+      margin-bottom: 60px;
+      max-width: 1200px; /* ancho máximo para que no se encoja */
+      width: 100%;
+    }
+    .form-card, .info-card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 25px;
+      box-shadow: 0 6px 15px rgba(0, 65, 106, 0.1);
+      margin-bottom: 20px;
+    }
+    .row.g-4 {
+      gap: 2rem;
+      /* Forzar fila sin apilamiento */
+      flex-wrap: nowrap !important;
+    }
+    /* Forzar columnas siempre 50% ancho */
+    .col-6 {
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+    }
+    h2 {
+      color: #00416A;
+      font-weight: 800;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    form label {
+      font-weight: 600;
+    }
+    .btn-custom {
+      background-color: #00416A;
+      border: none;
+      font-weight: 700;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,65,106,0.2);
+    }
+    .btn-custom:hover, .btn-custom:focus {
+      background-color: #006494;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,100,148,0.4);
+    }
+    .social-icons a {
+      font-size: 1.8rem;
+      color: #00416A;
+      margin-right: 20px;
+      transition: color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+    .social-icons a:hover {
+      color: #006494;
+      text-decoration: none;
+      transform: scale(1.3) rotate(10deg);
+    }
+    .form-card, .info-card {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .aos-animate {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    .info-card iframe {
+      min-height: 250px;
+      width: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="pagina pruebA 2.html">Osorio Seguridad SAS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nuestrosservicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienesosmos.html">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="zona privada.html">Zona privada</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Contacto -->
+  <section class="container">
+    <h2 data-aos="fade-down" data-aos-delay="100">Contáctanos</h2>
+    <div class="row g-4">
+      <!-- Columna 1 -->
+      <div class="col-6 form-card" data-aos="fade-right" data-aos-delay="200">
+        <form action="https://formspree.io/f/xzzvobob" method="POST" class="p-4" >
+          <div class="mb-3">
+            <label class="form-label" for="nombre">Nombre completo *</label>
+            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="email">Correo electrónico *</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="mensaje">Mensaje *</label>
+            <textarea name="mensaje" class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-custom px-5 py-2">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="col-6 info-card" data-aos="fade-left" data-aos-delay="200">
+        <h5>Información de contacto</h5>
+        <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad, País</p>
+        <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+        <p><strong>Correo:</strong> contacto@osorioseguridad.com</p>
+        <p><strong>Horario de atención:</strong> Lun - Vie: 8:00 am - 6:00 pm</p>
+
+        <div class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.418080248176!2d-75.19813868471484!3d4.438889042337326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f81fcbb81a373%3A0x99e35e68df3d6c37!2sIbagu%C3%A9%2C%20Tolima%2C%20Colombia!5e0!3m2!1ses!2sco!4v1691725732541!5m2!1ses!2sco"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="mt-3 social-icons">
+          <h6>Síguenos en:</h6>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-in-out',
+    });
+  </script>
+
+<section class="cta-final position-relative text-center text-white py-5" style="
+    background: linear-gradient(rgba(0, 65, 106, 0.8), rgba(0, 65, 106, 0.8)),
+                url('IMAGENES/fondo-seguridad.jpg') center/cover fixed;
+">
+  <style>
+    /* Animación de pulso */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    .btn-animado {
+      display: inline-block;
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+      border-radius: 50px;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      animation: pulse 1.8s infinite;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-animado:hover {
+      background-color: #ffcd39;
+    }
+  </style>
+
+  <div class="container" data-aos="zoom-in">
+    <h2 class="fw-bold display-5 mb-3">Asegura la confiabilidad de tu personal</h2>
+    <p class="lead mb-4">Expertos en poligrafía y estudios de confiabilidad listos para proteger tu empresa hoy mismo.</p>
+    
+    <a href="https://wa.me/573123868541" target="_blank" class="btn-animado">
+      📞 Quiero proteger mi empresa
+    </a>
+    
+    <p class="mt-3 fst-italic" style="opacity: 0.85;">Más de 200 empresas ya confían en nosotros.</p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Columna 1: Información de la empresa -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Osorio Provisión y Seguridad SAS</h5>
+        <p class="small">
+          NIT: 123456789-0<br>
+          Calle 123 #45-67, Bogotá - Colombia<br>
+          Tel: +57 313 350 7999
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Enlaces</h5>
+        <ul class="list-unstyled small">
+          <li><a href="politica-privacidad.html" class="text-white-50 text-decoration-none">Política de Privacidad</a></li>
+          <li><a href="terminos.html" class="text-white-50 text-decoration-none">Términos y Condiciones</a></li>
+          <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes sociales -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Síguenos</h5>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-facebook" style="font-size: 1.3rem;"></i></a>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-instagram" style="font-size: 1.3rem;"></i></a>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-linkedin" style="font-size: 1.3rem;"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Línea divisoria -->
+    <hr class="border-secondary">
+
+    <!-- Derechos de autor -->
+    <div class="text-center pb-2">
+      <p class="mb-0 small">&copy; 2025 Osorio Provisión y Seguridad SAS - Todos los derechos reservados.</p>
+      <p class="small text-white-50">Desarrollado por [Tu Nombre o Empresa de Diseño]</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón WhatsApp con tooltip al lado izquierdo -->
+<a href="https://wa.me/573123868541" target="_blank" class="whatsapp-button" aria-label="Chat WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="tooltip-text">¡Escríbenos y te ayudamos!</span>
+</a>
+
+<style>
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+    font-size: 30px;
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #1ebe57;
+    transform: scale(1.1);
+  }
+
+  /* Tooltip oculto por defecto */
+  .tooltip-text {
+    position: absolute;
+    bottom: 50%;
+    right: 100%;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, margin-right 0.3s ease;
+  }
+
+  /* Mostrar tooltip al hacer hover */
+  .whatsapp-button:hover .tooltip-text {
+    opacity: 1;
+    pointer-events: auto;
+    margin-right: 25px;
+  }
+</style>
+
+<!-- Font Awesome para el icono -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+
+</body>
+</html>
+
+
+

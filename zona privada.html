@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zona Privada - Osorio Provisión y Seguridad SAS</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f6f8;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .banner {
+      background-color: #00416A; /* tu color azul */
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .banner h1 {
+      font-weight: 800;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    .banner p {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    .container-form {
+      margin: auto;
+      background: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .form-label {
+      font-weight: 600;
+    }
+    .input-group-text {
+      cursor: pointer;
+      background: transparent;
+      border-left: none;
+    }
+    #error {
+      color: #d9534f;
+      margin-top: 12px;
+      font-weight: 600;
+      min-height: 24px;
+    }
+    button.btn-primary {
+      background-color: #00416A;
+      border-color: #00416A;
+      font-weight: 700;
+    }
+    button.btn-primary:hover {
+      background-color: #003358;
+      border-color: #003358;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Osorio Seguridad SAS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+  <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+  <li class="nav-item"><a class="nav-link" href="nuestrosservicios.html">Servicios</a></li>
+  <li class="nav-item"><a class="nav-link" href="quienesosmos.html">Quiénes somos</a></li>
+  <li class="nav-item"><a class="nav-link active" href="zona privada.html">Zona privada</a></li>
+  <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+</ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="banner">
+    <h1>Bienvenido a la zona de documentos</h1>
+    <p>Por favor digite la clave para acceder al formulario y subir sus documentos.</p>
+  </div>
+
+  <div class="container container-form mt-4 shadow">
+    <label for="codigo" class="form-label">Código de acceso</label>
+    <div class="input-group mb-3">
+      <input type="password" id="codigo" class="form-control" placeholder="Ingrese la clave" aria-label="Código de acceso" />
+      <span class="input-group-text" id="togglePassword" title="Mostrar / Ocultar contraseña">
+        <i class="bi bi-eye"></i>
+      </span>
+    </div>
+    <button class="btn btn-primary w-100" onclick="validarCodigo()">Entrar</button>
+    <div id="error"></div>
+  </div>
+
+  <script>
+    const codigoCorrecto = 'OSORIOSAS25'; // Cambia esto por el código real
+    const urlFormulario = 'https://docs.google.com/forms/d/e/1FAIpQLSfIP9QhQM4FdOqZ95qmIg77V8wVmMlQBvrVe4J07GU7BtxX-Q/viewform?usp=dialog'; // Pon aquí el link de tu Google Form
+
+    const passwordInput = document.getElementById('codigo');
+    const togglePassword = document.getElementById('togglePassword');
+    const errorDiv = document.getElementById('error');
+
+    togglePassword.addEventListener('click', () => {
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+
+      // Cambiar ícono
+      togglePassword.innerHTML = type === 'password' ? '<i class="bi bi-eye"></i>' : '<i class="bi bi-eye-slash"></i>';
+    });
+
+    function validarCodigo() {
+      const input = passwordInput.value.trim();
+      if(input === codigoCorrecto) {
+        errorDiv.textContent = '';
+        // Redirigir al formulario de Google
+        window.location.href = urlFormulario;
+      } else {
+        errorDiv.textContent = 'Código incorrecto. Intenta de nuevo.';
+      }
+    }
+  </script>
+  <!-- Botón WhatsApp con tooltip al lado izquierdo -->
+<a href="https://wa.me/573123868541" target="_blank" class="whatsapp-button" aria-label="Chat WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="tooltip-text">¡Escríbenos y te ayudamos!</span>
+</a>
+
+<style>
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+    font-size: 30px;
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #1ebe57;
+    transform: scale(1.1);
+  }
+
+  /* Tooltip oculto por defecto */
+  .tooltip-text {
+    position: absolute;
+    bottom: 50%;
+    right: 100%;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, margin-right 0.3s ease;
+  }
+
+  /* Mostrar tooltip al hacer hover */
+  .whatsapp-button:hover .tooltip-text {
+    opacity: 1;
+    pointer-events: auto;
+    margin-right: 25px;
+  }
+</style>
+
+<!-- Font Awesome para el icono -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+<!-- Font Awesome para el icono -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+<!-- No olvides tener Font Awesome cargado para el icono -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+
+
+</body>
+</html>
